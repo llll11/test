@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        @keyframes move {
+            0% {
+                transform: translateX(0px);
+            }
+            100% {
+                transform: translateX(100px);
+            }
+        }
+
+        .animation {
+            animation: move 10s ease infinite;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <button @click="tog=!tog">切换</button>
+    <h2 :class="animate">好好学习，天天向上</h2>
+    tr
+</div>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            animate: {
+                "animation": this.tog
+            },
+            tog: false
+        },
+        methods: {
+            togClick() {
+                this.tog = !this.tog
+            }
+        }
+    })
+</script>
+</body>
+</html>
